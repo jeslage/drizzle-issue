@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: drizzle-issue-db
+    ports:
+      - '3309:3306'
+
